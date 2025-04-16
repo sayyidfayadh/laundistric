@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <link rel="stylesheet" href="assets/scss/main.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .success-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .success-icon {
+            font-size: 50px;
+            color: #4CAF50;
+        }
+        .success-message {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .success-description {
+            font-size: 16px;
+            color: #555;
+            margin-top: 5px;
+        }
+        .home-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .home-button:hover {
+            background-color: #45a049;
+        }
+        
+    </style>
+</head>
+<body class="theme-primary">
+
+    <div class="success-container">
+        <div class="success-icon">✔️</div>
+        <div class="success-message">Success!</div>
+        <div class="success-description mb-3">Your message has been successfully submitted.<br>
+            We’ve received your information and will get back to you soon. Thank you! 😊
+            </div>
+        <a href="/" class="home-button">Go to Home</a>
+    </div>
+
+    <script>
+        handleRedirect();
+        function handleRedirect() {
+            setTimeout(() => {
+                window.location.href = '/';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
