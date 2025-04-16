@@ -2653,8 +2653,17 @@ banner home
 .section-1-banner {
   position: relative;
   padding-top: 120px;
-  padding-bottom: 90px;
+  padding-bottom: 0px;
   z-index: 1;
+}
+.howitworks-section {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 50px;
+  .Title-left{
+    padding-left: 25px;
+    padding-top: 20px;
+  }
 }
 .section-1-banner .Title-left {
   padding-bottom: 15px;
