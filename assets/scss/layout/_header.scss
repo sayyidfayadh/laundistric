@@ -265,7 +265,7 @@ START: Header CSS
         }
         .header-right-wrap{
             @include flex-vertical-center;
-            column-gap: 310px;
+            column-gap: 250px;
             flex-wrap: wrap;
             row-gap: 20px;
             @include breakpoint(xl){

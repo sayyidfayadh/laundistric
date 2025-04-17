@@ -160,15 +160,11 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="section">
+                <div class="container">
                     <!-- Slider Start-->
                     <div class="home-carousel swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="side-image">
-                                    <img class="image-pos img-fluid w-100 h-100 object-fit-cover" src="assets/img/Rectangle 1550.png">
-                                </div>
-                              <div class="container">
                                 <div class="row d-flex align-items-center justify-content-around">
                                     <div class="col-lg-5 col-md-6 col-12">
                                         <div class="Title-left">
@@ -194,11 +190,9 @@
                                         </div>
                                     </div>
                                 </div>
-                              </div>
                             </div>
                             
                             <div class="swiper-slide">
-                               <div class="container">
                                 <div class="row d-flex align-items-center align-items-center  justify-content-around ">
                                     <div class="col-lg-5 col-md-6 col-12">
                                         <div class="Title-left">
@@ -244,7 +238,6 @@
             
                                     </div>
                                 </div>
-                               </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="row d-flex align-items-center align-items-center  justify-content-around ">
@@ -1922,114 +1915,82 @@
                             <p class="text-primary text-start">Have questions or need assistance? We're here to help! Reach out to us for any inquiries, and our team will be happy
                                 to assist you.</p>
 
-                                <form
-                                class="contact-form needs-validation"
-                                action="send-email.php"
-                                method="POST"
-                                novalidate
-                              >
-                              <h5 class="text-start">Your Purpose,Your Plan-Select One To Continue</h5> <br>
-                                <div class="row g-1">
-                                  <div class="col-12">
-                                    <div class="d-flex gap-4">
-                                        <div class="form-check">
-                                            
-                                          <input class="form-check-input" type="radio" name="options" id="option1" value="option1">
-                                          <label class="form-check-label" for="option1">
-                                            Business 
-                                          </label>
-                                        </div>
-                                      
-                                        <div class="form-check">
-                                          <input class="form-check-input" type="radio" name="options" id="option2" value="option2">
-                                          <label class="form-check-label" for="option2">
-                                            Family
-                                          </label>
-                                        </div>
-                                      
-                                        <div class="form-check">
-                                          <input class="form-check-input" type="radio" name="options" id="option3" value="option3">
-                                          <label class="form-check-label" for="option3">
-                                            Individual
-                                          </label>
-                                        </div>
-                                      </div>
-                                      
-                                    <div class="form-floating mb-3">
-                                        
-                                      <input
-                                        type="text"
-                                        class="form-control"
-                                        id="nameInput"
-                                        name="name"
-                                        placeholder="Name"
-                                        required
-                                      />
-                                      <label for="nameInput">Name</label>
-                                    <div class="invalid-feedback text-start">Please enter your name</div>
-              
-                                    </div>
-                                  </div>
-                                  <div class="col-12">
-                                    <div class="form-floating mb-3">
-                                      <input
-                                      value="+971"
-                                        type="tel"
-                                        class="form-control"
-                                        id="phoneInput"
-                                        name="phone"
-                                        placeholder="Phone"
-                                        maxlength="13"
-                                        pattern="\+971[5-9]\d{8}" 
-                                        required
-                                      />
-                                      <label for="phoneInput">Phone</label>
-                                    <div class="invalid-feedback text-start">Please enter a valid phone number</div>
-              
-                                    </div>
-              
-                                  </div>
-                                  <div class="col-12">
-                                    <div class="form-floating mb-3">
-                                      <input
-                                        type="email"
-                                        class="form-control"
-                                        id="emailInput"
-                                        name="email"
-                                        placeholder="Email"
-                                        required
-                                      />
-                                      <label for="emailInput">Email</label>
-                                    <div class="invalid-feedback text-start">Please enter your email id</div>
-              
-                                    </div>
-                                  </div>
-                                  <div class="col-12">
-                                    <div class="form-floating mb-3">
-                                      <textarea
-                                        class="form-control"
-                                        name="message"
-                                        placeholder="Message"
-                                        id="messageTextarea"
-                                        style="height: 100px"
-                                        required
-                                      ></textarea>
-                                      <label for="messageTextarea">Message</label>
-                                    <div class="invalid-feedback text-start">Please enter your message</div>
-              
-                                    </div>
-              
-                                  </div>
-                                  <div class="col-12 text-start">
-                                    <button
-                                      type="submit"
-                                      class="btn btn-outline-secondary submit-btn px-4"
-                                    >
-                                      Submit
-                                    </button>
-                                  </div>
-                                </div>
-                              </form>
+                                <form class="contact-form needs-validation" id="contactForm" action="mail.php" method="POST" novalidate>
+  <h5 class="text-start">Your Purpose, Your Plan - Select One to Continue</h5><br>
+
+  <div class="d-flex gap-4 mb-3">
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="options" id="business" value="business" required>
+      <label class="form-check-label" for="business">Business</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="options" id="family" value="family">
+      <label class="form-check-label" for="family">Family</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="options" id="individual" value="individual">
+      <label class="form-check-label" for="individual">Individual</label>
+    </div>
+  </div>
+
+  <div id="businessFields" class="extra-fields d-none">
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" name="company_name" placeholder="Company Name">
+      <label>Company Name</label>
+    </div>
+    <div class="form-floating mb-3">
+      <select class="form-select" name="location">
+        <option value="">Select Location</option>
+        <option value="Dubai">Dubai</option>
+        <option value="Abu Dhabi">Abu Dhabi</option>
+        <option value="Sharjah">Sharjah</option>
+      </select>
+      <label>Location</label>
+    </div>
+  </div>
+
+  <div id="individualFields" class="extra-fields d-none">
+    <div class="form-floating mb-3">
+      <select class="form-select" name="location">
+        <option value="">Select Location</option>
+        <option value="Dubai">Dubai</option>
+        <option value="Abu Dhabi">Abu Dhabi</option>
+        <option value="Sharjah">Sharjah</option>
+      </select>
+      <label>Location</label>
+    </div>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" name="name" placeholder="Name" required>
+    <label>Name</label>
+    <div class="invalid-feedback text-start">Please enter your name</div>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input type="tel" class="form-control" name="phone" placeholder="Phone" value="+971" pattern="\+971[5-9]\d{8}" required>
+    <label>Phone</label>
+    <div class="invalid-feedback text-start">Please enter a valid UAE phone number</div>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" name="email" placeholder="Email" required>
+    <label>Email</label>
+    <div class="invalid-feedback text-start">Please enter your email</div>
+  </div>
+
+  <div class="form-floating mb-3">
+    <textarea class="form-control" name="message" placeholder="Message" style="height: 100px" required></textarea>
+    <label>Message</label>
+    <div class="invalid-feedback text-start">Please enter your message</div>
+  </div>
+
+  <div class="col-12 text-start">
+    <button type="submit" class="btn btn-outline-secondary px-4">Submit</button>
+  </div>
+
+  <div id="successMessage" class="mt-3 text-success fw-bold"></div>
+</form>
                         </div>
                         <div class="col-lg-6 col-12 position-relative">
                             <div class="img-container pt-4 ">
@@ -2360,45 +2321,67 @@
  //Form validation 
      // Example starter JavaScript for disabling form submissions if there are invalid fields
      (function () {
-       'use strict'
+  'use strict';
 
-       // Fetch all the forms we want to apply custom Bootstrap validation styles to
-       var forms = document.querySelectorAll('.needs-validation')
+  // Form toggle logic
+  const businessFields = document.querySelectorAll(".business-fields");
+  const individualFields = document.querySelectorAll(".individual-fields");
+  const locationSelects = document.querySelectorAll(".location-select");
 
-       // Loop over them and prevent submission
-       Array.prototype.slice.call(forms)
-         .forEach(function (form) {
-           //on Input changes
-           $(form).find("input[type='tel']").on("input", function() {
-             this.value = this.value.replace(/[^\d+]/g, ""); // Allow only numbers and "+"
-             if (!this.value.startsWith("+971")) {
-               this.value = "+971" + this.value.replace(/^\+971/, "");
-             }            
-           });
+  function updateFormVisibility(type) {
+    // Reset all optional field containers
+    businessFields.forEach(el => el.style.display = "none");
+    individualFields.forEach(el => el.style.display = "none");
+    locationSelects.forEach(el => el.style.display = "none");
 
-           //Validation Method
-           form.addEventListener('submit', function (event) {
-             $('.submit-btn').attr('disabled','true');
-             if (!form.checkValidity()) {
-               event.preventDefault()
-               event.stopPropagation();
-             }
-             setTimeout(() => {
-             $('.submit-btn').removeAttr('disabled');
-               
-             }, 1000);
-             // console.log(form.checkValidity(),'#form');
-             
-             form.classList.add('was-validated')
-           }, false)
+    // Hide all optional field validations
+    businessFields.forEach(el => el.querySelectorAll("input, select").forEach(inp => inp.required = false));
+    individualFields.forEach(el => el.querySelectorAll("select").forEach(sel => sel.required = false));
 
-           
+    if (type === "option1") { // Business
+      businessFields.forEach(el => el.style.display = "block");
+      businessFields.forEach(el => el.querySelectorAll("input, select").forEach(inp => inp.required = true));
+    } else if (type === "option3") { // Individual
+      individualFields.forEach(el => el.style.display = "block");
+      individualFields.forEach(el => el.querySelectorAll("select").forEach(sel => sel.required = true));
+    }
+    // Family has no extra fields
+  }
 
+  // Listen to radio buttons
+  document.querySelectorAll("input[name='options']").forEach(radio => {
+    radio.addEventListener("change", (e) => {
+      updateFormVisibility(e.target.id);
+    });
+  });
 
-           console.log($(form).find("input[type='tel']"),'#form');
-           
-         })
-     })()
+  // Phone input formatting
+  var forms = document.querySelectorAll('.needs-validation');
+  Array.prototype.slice.call(forms).forEach(function (form) {
+    $(form).find("input[type='tel']").on("input", function () {
+      this.value = this.value.replace(/[^\d+]/g, ""); // Allow only digits and +
+      if (!this.value.startsWith("+971")) {
+        this.value = "+971" + this.value.replace(/^\+971/, "");
+      }
+    });
+
+    form.addEventListener('submit', function (event) {
+      $('.submit-btn').attr('disabled', 'true');
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      setTimeout(() => {
+        $('.submit-btn').removeAttr('disabled');
+      }, 1000);
+      form.classList.add('was-validated');
+    }, false);
+  });
+
+  // Optionally preselect the first option
+  const defaultOption = document.querySelector("input[name='options']:checked");
+  if (defaultOption) updateFormVisibility(defaultOption.id);
+})();
    </script>
 
 </body>

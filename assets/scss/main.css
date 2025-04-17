@@ -2653,17 +2653,8 @@ banner home
 .section-1-banner {
   position: relative;
   padding-top: 120px;
-  padding-bottom: 0px;
+  padding-bottom: 90px;
   z-index: 1;
-}
-.howitworks-section {
-  position: relative;
-  padding-top: 120px;
-  padding-bottom: 50px;
-  .Title-left{
-    padding-left: 25px;
-    padding-top: 20px;
-  }
 }
 .section-1-banner .Title-left {
   padding-bottom: 15px;
@@ -3455,6 +3446,135 @@ section
   font-weight: 600;
 }
 
+/*new code*/
+.bg-theme-business {
+  background-color: #8662DB;
+}
+
+.bg-the-family {
+  background-color: #E0985E;
+}
+
+.bg-the-individual {
+  background-color: #36B5E1;
+}
+
+.box-shadow-theme1:hover {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.box-shadow-theme2 {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.radious-2 {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+body {
+  background-color: #F5F7F8;
+}
+
+.button-fancy-gradient-3 {
+  background-image: linear-gradient(45deg, #03293b, #0f2f40);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.button-fancy-gradient-3:before {
+  background-image: linear-gradient(45deg, #8e72cf, rgb(90, 60, 159));
+}
+
+[class*=button-fancy-gradient-3]:before {
+  opacity: 0.1;
+}
+
+[class*=button-fancy]:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+  transform-origin: center left;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+[class*=button-fancy-gradient-2]:hover:before {
+  transform: translateY(-50%) scale(0.25);
+  background-image: linear-gradient(45deg, #7451c4, #2d0e74);
+  opacity: 1;
+}
+
+[class*=button-fancy]:hover:before {
+  transform: translateY(-50%) scale(0.25);
+  background-image: linear-gradient(45deg, #7451c4, #2d0e74);
+  opacity: 1;
+}
+
+.button-fancy-gradient-2:before {
+  background-image: linear-gradient(45deg, #7451c4, #2d0e74);
+}
+
+.bg-header-inner {
+  background-color: #EAF2FF;
+}
+
+.bg-color-green {
+  background-color: #D8FFEA;
+}
+
+.bg-color-blue {
+  background-color: #EAF2FF;
+}
+
+.blog .card-body {
+  position: relative;
+  top: -44px;
+  margin: 0 10px;
+  height: auto;
+  z-index: 99;
+  background-color: #ffffff;
+  backdrop-filter: blur(9px) saturate(300%);
+  -webkit-backdrop-filter: blur(22px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.54);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.blog.card-img-top {
+  position: relative;
+  z-index: -1;
+}
+
+/*theme slider home*/
+.home-carousel {
+  position: relative;
+}
+
+.side-image {
+  position: absolute;
+  width: 36%;
+  top: 0;
+  display: block;
+  right: 0;
+  height: 100vh;
+}
+.side-image .image-pos {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 /** Buttons CSS */
 .rr-primary-btn {
   background-color: var(--rr-color-theme-primary);
@@ -3517,6 +3637,25 @@ section
   background-color: var(--rr-color-theme-primary);
 }
 
+/*position-arrangement button in home page*/
+.position-arrangement {
+  position: absolute;
+  bottom: 30px;
+  backdrop-filter: blur(23px) saturate(200%);
+  -webkit-backdrop-filter: blur(23px) saturate(200%);
+  background-color: rgba(38, 90, 189, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.position-arrangement:hover {
+  backdrop-filter: blur(10px) saturate(200%);
+  -webkit-backdrop-filter: blur(10px) saturate(200%);
+  background-color: rgba(38, 90, 189, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: white;
+}
+
 /**----------------------------------------
 START: Header CSS
 ----------------------------------------*/
@@ -3524,7 +3663,7 @@ START: Header CSS
   background-color: transparent;
   width: 100%;
   position: fixed;
-  top: 50px;
+  top: 10px;
   left: 0;
   width: 100%;
   z-index: 99;
@@ -3772,8 +3911,8 @@ START: Header CSS
 .header .primary-header-inner .header-right-wrap {
   display: flex;
   align-items: center;
-  -moz-column-gap: 310px;
-       column-gap: 310px;
+  -moz-column-gap: 250px;
+       column-gap: 250px;
   flex-wrap: wrap;
   row-gap: 20px;
 }
@@ -16221,7 +16360,6 @@ START: Footer CSS
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* padding: 30px 0; */
 }
 
 .loginProcess-section .loginProcess-step {
