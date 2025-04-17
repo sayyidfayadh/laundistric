@@ -164,40 +164,48 @@
                     <!-- Slider Start-->
                     <div class="home-carousel swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="side-image">
-                                    <img class="image-pos img-fluid w-100 h-100 object-fit-cover" src="assets/img/Rectangle 1550.png">
+                            <div class="swiper-slide position-relative" style="overflow: visible; min-height: 500px;">
+  
+                                <!-- Side background image -->
+                                <div class="position-absolute" style="top: 114px; right: 40px;">
+                                    <img class="img-fluid object-fit-cover" src="assets/img/Rectangle 1550.png" style="width: 430px; height: auto;">
                                 </div>
-                              <div class="container">
-                                <div class="row d-flex align-items-center justify-content-around">
+                                
+                              
+                                <!-- Foreground content -->
+                                <div class="container position-relative" style="z-index: 2;">
+                                  <div class="row d-flex align-items-center justify-content-around">
+                                    
+                                    <!-- Left text -->
                                     <div class="col-lg-5 col-md-6 col-12">
-                                        <div class="Title-left">
-                                            <h1 class="section-title" data-text-animation data-split="word" data-duration="1">
-                                                Premium Care,<br>
-                                                <b><span class="text-primary bg-white rounded p-1">Perfect</span></b> Result.<br>
-                                                Delivered to your door
-                                            </h1>
-                                            <h2 class="section-title" data-text-animation data-split="word" data-duration="1">
-                                                "Flawless Laundry. Right to Your Door."
-                                            </h2>
+                                      <div class="Title-left">
+                                        <h1 class="section-title" data-text-animation data-split="word" data-duration="1">
+                                          Premium Care,<br>
+                                          <b><span class="text-primary bg-white rounded p-1">Perfect</span></b> Result.<br>
+                                          Delivered to your door
+                                        </h1>
+                                        <h2 class="section-title" data-text-animation data-split="word" data-duration="1">
+                                          "Flawless Laundry. Right to Your Door."
+                                        </h2>
+                                      </div>
+                                    </div>
+                              
+                                    <!-- Right image -->
+                                    <div class="col-lg-7 col-md-6 col-12 d-flex">
+                                      <div class="about-img-4 reveal row g-2 w-100">
+                                        <div class="col-6">
+                                          <img class="img-fluid w-100 h-100 object-fit-cover" src="assets/img/Rectangle 1551.png">
                                         </div>
                                        
+                                      </div>
                                     </div>
-                                    <div class="col-lg-5 col-md-6 col-12 d-flex">
-                                        <div class="about-img-4 reveal row g-2 w-100">
-                                            <div class="col-6">
-                                                <img class="img-fluid w-100 h-100  img-fluid w-100 h-100 object-fit-cover" src="assets/img/Rectangle 1551.png">
-                                            </div>
-                                            <div class="col-6">
-                                                <!-- <img class="img-fluid w-100 h-100 object-fit-cover" src="assets/img/Rectangle 1550.png"> -->
-                                            </div>
-                                        </div>
-                                    </div>
+                              
+                                  </div>
                                 </div>
                               </div>
-                            </div>
+                              
                             
-                            <div class="swiper-slide">
+                             <div class="swiper-slide">
                                <div class="container">
                                 <div class="row d-flex align-items-center align-items-center  justify-content-around ">
                                     <div class="col-lg-5 col-md-6 col-12">
@@ -294,7 +302,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+                             
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
