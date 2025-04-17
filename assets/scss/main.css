@@ -80,6 +80,11 @@ body {
   font-weight: normal;
   color: var(--rr-color-text-body);
 }
+.express-delivery{
+  background: linear-gradient(90deg, #1d5fd0 0%, #1d5fd0 30%, rgba(29, 95, 208, 0) 100%);
+border-radius: 10px;
+
+}
 
 .theme-dark {
   color: var(--rr-color-grey-3);
