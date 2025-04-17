@@ -381,134 +381,164 @@
               </div>
             </div>
           </section>  
-<section id="contact" class="contact-section section-space">
-  <div class="container">
-  
-      <div class="row d-flex flex-column-reverse flex-lg-row justify-content-center text-center g-3">
+          <section id="contact" class="contact-section section-space">
+            <div class="container">
+            
+                <div class="row d-flex flex-column-reverse flex-lg-row justify-content-center text-center g-3">
 
-          <div class="col-lg-6 col-12">
-              <h3 class="section-title text-start" data-text-animation data-split="word" data-duration="1">Get in Touch with Us!</h3>
-              <p class="text-primary text-start">Have questions or need assistance? We're here to help! Reach out to us for any inquiries, and our team will be happy
-                  to assist you.</p>
+                    <div class="col-lg-6 col-12">
+                        <h3 class="section-title text-start" data-text-animation data-split="word" data-duration="1">Get in Touch with Us!</h3>
+                        <p class="text-primary text-start">Have questions or need assistance? We're here to help! Reach out to us for any inquiries, and our team will be happy
+                            to assist you.</p>
 
-                  <form
-                  class="contact-form needs-validation"
-                  action="send-email.php"
-                  method="POST"
-                  novalidate
-                >
-                <h5 class="text-start">Your Purpose,Your Plan-Select One To Continue</h5> <br>
-                  <div class="row g-1">
-                    <div class="col-12">
-                      <div class="d-flex gap-4">
-                          <div class="form-check">
-                              
-                            <input class="form-check-input" type="radio" name="options" id="option1" value="option1">
-                            <label class="form-check-label" for="option1">
-                              Business 
-                            </label>
-                          </div>
-                        
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="options" id="option2" value="option2">
-                            <label class="form-check-label" for="option2">
-                              Family
-                            </label>
-                          </div>
-                        
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="options" id="option3" value="option3">
-                            <label class="form-check-label" for="option3">
-                              Individual
-                            </label>
-                          </div>
+                            <form
+                            class="contact-form needs-validation"
+                            action="send-email.php"
+                            method="POST"
+                            novalidate
+                          >
+                          <h5 class="text-start">Your Purpose,Your Plan-Select One To Continue</h5> <br>
+                            <div class="row g-1">
+                              <div class="col-12">
+                                <div class="d-flex gap-4">
+                                    <div class="form-check">
+                                        
+                                      <input class="form-check-input" type="radio" name="options" id="option1" value="option1">
+                                      <label class="form-check-label" for="option1">
+                                        Business 
+                                      </label>
+                                    </div>
+                                  
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="options" id="option2" value="option2">
+                                      <label class="form-check-label" for="option2">
+                                        Family
+                                      </label>
+                                    </div>
+                                  
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="options" id="option3" value="option3">
+                                      <label class="form-check-label" for="option3">
+                                        Individual
+                                      </label>
+                                    </div>
+                                  </div>
+                                  
+                                <div class="form-floating mb-3">
+                                    
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="nameInput"
+                                    name="name"
+                                    placeholder="Name"
+                                    required
+                                  />
+                                  <label for="nameInput">Name</label>
+                                <div class="invalid-feedback text-start">Please enter your name</div>
+          
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="form-floating mb-3">
+                                  <input
+                                  value="+971"
+                                    type="tel"
+                                    class="form-control"
+                                    id="phoneInput"
+                                    name="phone"
+                                    placeholder="Phone"
+                                    maxlength="13"
+                                    pattern="\+971[5-9]\d{8}" 
+                                    required
+                                  />
+                                  <label for="phoneInput">Phone Number</label>
+                                <div class="invalid-feedback text-start">Please enter a valid phone number</div>
+          
+                                </div>
+          
+                              </div>
+                              <div class="col-12">
+                                <div class="form-floating mb-3">
+                                  <input
+                                    type="email"
+                                    class="form-control"
+                                    id="emailInput"
+                                    name="email"
+                                    placeholder="Email"
+                                    required
+                                  />
+                                  <label for="emailInput">Email</label>
+                                <div class="invalid-feedback text-start">Please enter your email id</div>
+          
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="form-floating mb-3">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="addressInput"
+                                    name="Address"
+                                    placeholder="Address"
+                                    required
+                                  />
+                                  <label for="addressInput">Address</label>
+                                <div class="invalid-feedback text-start">Please enter your Address</div>
+          
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="form-floating mb-3">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="locationInput"
+                                    name="Location"
+                                    placeholder="Location/Place"
+                                    required
+                                  />
+                                  <label for="addressInput">Location / Place</label>
+                                <div class="invalid-feedback text-start">Please enter your Location</div>
+          
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="form-floating mb-3">
+                                  <textarea
+                                    class="form-control"
+                                    name="message"
+                                    placeholder="Message"
+                                    id="messageTextarea"
+                                    style="height: 100px"
+                                    required
+                                  ></textarea>
+                                  <label for="messageTextarea">Message</label>
+                                <div class="invalid-feedback text-start">Please enter your message</div>
+          
+                                </div>
+          
+                              </div>
+                              <div class="col-12 text-start">
+                                <button
+                                  type="submit"
+                                  class="btn btn-outline-secondary submit-btn px-4"
+                                >
+                                  Submit
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="col-lg-6 col-12 position-relative">
+                        <div class="img-container pt-4 ">
+                            <img class="w-auto h-auto" src="assets/img/contactImg.png" alt="contact">
                         </div>
-                        
-                      <div class="form-floating mb-3">
-                          
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="nameInput"
-                          name="name"
-                          placeholder="Name"
-                          required
-                        />
-                        <label for="nameInput">Name</label>
-                      <div class="invalid-feedback text-start">Please enter your name</div>
-
-                      </div>
                     </div>
-                    <div class="col-12">
-                      <div class="form-floating mb-3">
-                        <input
-                        value="+971"
-                          type="tel"
-                          class="form-control"
-                          id="phoneInput"
-                          name="phone"
-                          placeholder="Phone"
-                          maxlength="13"
-                          pattern="\+971[5-9]\d{8}" 
-                          required
-                        />
-                        <label for="phoneInput">Phone</label>
-                      <div class="invalid-feedback text-start">Please enter a valid phone number</div>
-
-                      </div>
-
-                    </div>
-                    <div class="col-12">
-                      <div class="form-floating mb-3">
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="emailInput"
-                          name="email"
-                          placeholder="Email"
-                          required
-                        />
-                        <label for="emailInput">Email</label>
-                      <div class="invalid-feedback text-start">Please enter your email id</div>
-
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-floating mb-3">
-                        <textarea
-                          class="form-control"
-                          name="message"
-                          placeholder="Message"
-                          id="messageTextarea"
-                          style="height: 100px"
-                          required
-                        ></textarea>
-                        <label for="messageTextarea">Message</label>
-                      <div class="invalid-feedback text-start">Please enter your message</div>
-
-                      </div>
-
-                    </div>
-                    <div class="col-12 text-start">
-                      <button
-                        type="submit"
-                        class="btn btn-outline-secondary submit-btn px-4"
-                      >
-                        Submit
-                      </button>
-                    </div>
-                  </div>
-                </form>
-          </div>
-          <div class="col-lg-6 col-12 position-relative">
-              <div class="img-container pt-4 ">
-                  <img class="w-auto h-auto" src="assets/img/contactImg.png" alt="contact">
-              </div>
-          </div>
-      </div>
-    
-  </div>
-</section>   
+                </div>
+              
+            </div>
+        </section>  
 <section>
     <div class="col-12 p-0">
         <img src="assets/img/team1.jpg" class="w-100" alt="">
