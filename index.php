@@ -2238,7 +2238,7 @@
                                 <p>Copyright 2025 Laundristic.</p>
                             </div>
                             <div class="col-lg-2 offset-lg-1">
-                                <p class="fw-500">Terms of Services</p>
+                                <p class="fw-500">Terms & Conditions</p>
                             </div>
                             <div class="col-lg-2">
                                  <a href="privacy-policy.html">  <p class="fw-500">Privacy Policy</p></a>
