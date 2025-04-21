@@ -502,6 +502,7 @@ ul {
   text-transform: inherit;
   position: relative;
   overflow: hidden;
+  text-align: left;
 }
 @media (max-width: 1170px) {
   .section-heading .section-title {
@@ -3917,7 +3918,7 @@ START: Header CSS
   display: flex;
   align-items: center;
   -moz-column-gap: 250px;
-       column-gap: 250px;
+       column-gap: 149px;
   flex-wrap: wrap;
   row-gap: 20px;
 }
@@ -8246,6 +8247,9 @@ START: Testi CSS
     display: flex;
 
 } */
+.container{
+  overflow-x: hidden !important;
+}
 .testi-carousel-wrap .testi-thumb-wrap {
   max-width: 310px;
   width: 100%;
@@ -16398,3 +16402,110 @@ START: Footer CSS
 .loginProcess-section .step2 .line-lg img {
   width: 80%;
 }/*# sourceMappingURL=main.css.map */
+
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575px) {
+  .section-1-banner .Title-left{
+    padding-top: 0px !important;
+  }
+  .section-1-banner{
+    padding: 0px !important;
+  }
+  .section-title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center!important;
+  }
+
+  .Title-left {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+
+  .side-background-image {
+   margin-top: 220px !important;
+   display: block;
+   justify-content: center;
+   align-items: center !important;
+  } 
+
+  .rating-widget,
+  .customer-comment,
+  .app-widget {
+    text-align: center;
+    margin-top: 15px;
+    padding: 0 2px!important;
+  }
+
+  .box-link ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .box-link li {
+    list-style: none;
+  }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+ 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .section-1-banner .Title-left{
+    padding-top: 0px !important;
+  }
+  .section-1-banner{
+    padding: 0px !important;
+  }
+  .section-title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center!important;
+  }
+
+  .Title-left {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+
+  .side-background-image {
+   margin-top: 220px !important;
+   display: block;
+   justify-content: center;
+   align-items: center !important;
+  } 
+
+  .customer-comment,
+  .app-widget {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .box-link ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .box-link li {
+    list-style: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Your styles here */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Your styles here */
+}
+
