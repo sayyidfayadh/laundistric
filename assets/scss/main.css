@@ -8249,6 +8249,7 @@ START: Testi CSS
 } */
 .container{
   overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 .testi-carousel-wrap .testi-thumb-wrap {
   max-width: 310px;
