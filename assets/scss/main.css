@@ -3002,6 +3002,13 @@ section
   position: relative;
   padding: 9rem 0;
 }
+@media (max-width: 575px) {
+  .step2 {
+    position: relative;
+    padding: 1rem 0;
+  }
+}
+
 .step2 .line-lg {
   position: absolute;
   margin: 0 auto;
@@ -8251,6 +8258,7 @@ START: Testi CSS
   overflow-x: hidden !important;
   overflow-y: hidden !important;
 }
+
 .testi-carousel-wrap .testi-thumb-wrap {
   max-width: 310px;
   width: 100%;

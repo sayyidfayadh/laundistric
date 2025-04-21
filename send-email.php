@@ -29,7 +29,7 @@ try {
     $mail->Password = "oxtvmslsnnkuuwoy";
 
     $mail->setFrom("webotixinternalstorage@gmail.com", "Webotix");
-    $mail->addAddress("webotixinternalstorage@gmail.com", "Webotix");
+    $mail->addAddress("enjoyal@webotix.ae", "Webotix");
 
     $mail->Subject = "Thank you for contacting us!";
     // Create a message body
