@@ -2765,8 +2765,8 @@ section
 
 .section-space {
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   z-index: 1;
   color: var(--rr-color-grey-3);
 }
@@ -3000,7 +3000,7 @@ section
 
 .step2 {
   position: relative;
-  padding: 9rem 0;
+  padding: 4rem 0;
 }
 @media (max-width: 575px) {
   .step2 {
@@ -3925,7 +3925,7 @@ START: Header CSS
   display: flex;
   align-items: center;
   -moz-column-gap: 250px;
-       column-gap: 149px;
+       column-gap: 30px;
   flex-wrap: wrap;
   row-gap: 20px;
 }
