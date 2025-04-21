@@ -911,7 +911,7 @@
                                     <img class="w-auto ms-auto" src="/assets/img/icons/double-quote.svg" width="30" height="20" alt="quoteIcon">
                                 </div>
                                 <p class="reviews-quote mt-3">
-                                    "Working with PowerTraders has been a game-changer for our business. Their expertise in cloud computing allowed us to
+                                    "Working with Laundristic has been a game-changer for our business. Their expertise in cloud computing allowed us to
                                     scale our operations quickly and efficiently, and their personalized approach ensured that we got what we need."
                                 </p>
                             </div>
@@ -952,7 +952,7 @@
                                     <img class="w-auto ms-auto" src="/assets/img/icons/double-quote.svg" width="30" height="20" alt="quoteIcon">
                                 </div>
                                 <p class="reviews-quote mt-3">
-                                    "Working with PowerTraders has been a game-changer for our business. Their expertise in cloud computing allowed us to
+                                    "Working with Laundristic has been a game-changer for our business. Their expertise in cloud computing allowed us to
                                     scale our operations quickly and efficiently, and their personalized approach ensured that we got what we need."
                                 </p>
                             </div>
@@ -993,7 +993,7 @@
                                     <img class="w-auto ms-auto" src="/assets/img/icons/double-quote.svg" width="30" height="20" alt="quoteIcon">
                                 </div>
                                 <p class="reviews-quote mt-3">
-                                    "Working with PowerTraders has been a game-changer for our business. Their expertise in cloud computing allowed us to
+                                    "Working with Laundristic has been a game-changer for our business. Their expertise in cloud computing allowed us to
                                     scale our operations quickly and efficiently, and their personalized approach ensured that we got what we need."
                                 </p>
                             </div>
@@ -1034,7 +1034,7 @@
                                     <img class="w-auto ms-auto" src="/assets/img/icons/double-quote.svg" width="30" height="20" alt="quoteIcon">
                                 </div>
                                 <p class="reviews-quote mt-3">
-                                    "Working with PowerTraders has been a game-changer for our business. Their expertise in cloud computing allowed us to
+                                    "Working with Laundristic has been a game-changer for our business. Their expertise in cloud computing allowed us to
                                     scale our operations quickly and efficiently, and their personalized approach ensured that we got what we need."
                                 </p>
                             </div>
@@ -1075,7 +1075,7 @@
                                     <img class="w-auto ms-auto" src="/assets/img/icons/double-quote.svg" width="30" height="20" alt="quoteIcon">
                                 </div>
                                 <p class="reviews-quote mt-3">
-                                    "Working with PowerTraders has been a game-changer for our business. Their expertise in cloud computing allowed us to
+                                    "Working with Laundristic has been a game-changer for our business. Their expertise in cloud computing allowed us to
                                     scale our operations quickly and efficiently, and their personalized approach ensured that we got what we need."
                                 </p>
                             </div>
@@ -1116,7 +1116,7 @@
                                     <img class="w-auto ms-auto" src="/assets/img/icons/double-quote.svg" width="30" height="20" alt="quoteIcon">
                                 </div>
                                 <p class="reviews-quote mt-3">
-                                    "Working with PowerTraders has been a game-changer for our business. Their expertise in cloud computing allowed us to
+                                    "Working with Laundristic has been a game-changer for our business. Their expertise in cloud computing allowed us to
                                     scale our operations quickly and efficiently, and their personalized approach ensured that we got what we need."
                                 </p>
                             </div>
@@ -2167,7 +2167,7 @@
             <footer class="footer-section">
                 <div class="shape"><img src="assets/img/shapes/shape1.png" alt="footer"></div>
                 <div class="container">
-                    <div class="row footer-wrap">
+                    <div class="row footer-wrap justify-content-center">
                         <div class="col-lg-3 col-md-6">
                             <div class="footer-widget">
                                 <div class="widget-header">
@@ -2179,7 +2179,7 @@
                                     waiting to use a dryer in a launderette and folding of clothes. I'm glad I found it.</p>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-lg-2 col-md-6">
                             <div class="footer-widget footer-col-2">
                                 <div class="widget-header">
                                     <h3 class="widget-title">Company</h3>
@@ -2191,7 +2191,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-lg-2 col-md-6">
                             <div class="footer-widget">
                                 <div class="widget-header">
                                     <h3 class="widget-title">Laundry</h3>
@@ -2207,6 +2207,17 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
+                            <div class="footer-widget">
+
+                                <div class="widget-header">
+                                    <h3 class="widget-title">Payment Methods</h3>
+                                </div>
+                               <div>
+                                <img src="/assets/img/image003.png" style="width: 200px;" alt="">
+                               </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
                             <div class="footer-widget">
 
                                 <div class="widget-header">
@@ -2235,17 +2246,18 @@
                     <div class="container">
                         <div class="row copyright-content">
                             <div class="col-lg-4 ">
-                                <p>Copyright 2025 Laundristic Laundry.</p>
+                                <p>Copyright 2025 Laundristic.</p>
                             </div>
                             <div class="col-lg-2 offset-lg-1">
-                                <p class="fw-500">Terms of Services</p>
+                               <a href="terms-conditions.html"> <p class="fw-500">Terms & Conditions</p></a>
                             </div>
                             <div class="col-lg-2">
                                  <a href="privacy-policy.html">  <p class="fw-500">Privacy Policy</p></a>
                             </div>
                             <div class="col-lg-3 ">
                                 <div class="d-flex align-items-center">
-                                    <p>Designed and Developed by </p>
+                                    
+                                    <a href="https://webotix.ae/"><p class="fw-500">Designed and Developed by </p></a>
                                     <img src="assets/img/logos/webotixLogo.png" alt="Developed by Webotix" class="w-auto h-auto">
                                 </div>
                             </div>
