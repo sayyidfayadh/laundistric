@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header class="header sticky-active">
+<header class="header sticky-active">
         <div class="primary-header">
             <div class="primary-header-inner">
                 <div class="header-logo d-lg-block">
@@ -31,11 +31,12 @@
                     <div class="header-menu-wrap">
                         <div class="mobile-menu-items">
                             <ul>
+                                <li><a href="index.html">Home</a></li>
                                 <li><a href="HowItWorks.html">How it Works</a></li>
-                                <li><a href="AboutUs.html">About Us</a></li>
-                                <li><a href="Business.html">Business</a></li>                             
-                                <li><a href="Blogs.html">Blogs</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="AboutUs.html">About Us</a></li>    
+                                <li><a href="Business.html">Business </a></li>   
+                                <li><a href="Blogs.html">Blogs</a></li>   
+                                <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -49,12 +50,12 @@
                                 <!-- |
                                 <li><a href="contact.html">AR</a></li> -->
                                 <li class="app-btn rr-primary-btn">
-                                    <span>Call | Whatsapp</span>
-                                    <a href="contact.html">
+                                    <a href="tel:+123456789"> <span>Call | Whatsapp</span></a>
+                                    <a href="tel:+123456789">
                                         <img class="regular-icon" src="assets/img/ic_baseline-phone.png">
                                         <!-- <img class="fixed-icon" src="assets/img/ico-primary-apple.svg">-->
                                         </a>
-                                    <a href="contact.html">
+                                    <a href="tel:+123456789">
                                         <img class="regular-icon"
                                             src="assets/img/ri_whatsapp-fill.png">
                                         <!-- <img class="fixed-icon" src="assets/img/ico-primary-android.svg">-->
@@ -99,8 +100,9 @@
         </button>
         <div class="side-menu-content">
             <div class="side-menu-logo">
-                <a class="dark-img" href="index.html"><img src="assets/img/logo/logo-2.png" alt="logo"></a>
-                <a class="light-img" href="index.html"><img src="assets/img/logo/logo-3.png" alt="logo"></a>
+               <a href="index.html">  <img class="logo-dark" src="assets/img/logo.svg" alt="Logo">
+                <!-- <img class="logo-light" src="assets/img/logo.svg" alt="Logo"> -->
+                <img class="logo-fixed" src="assets/img/fixed-logo.svg" alt="Logo"></a>
             </div>
             <div class="side-menu-wrap"></div>
             <div class="side-menu-about">

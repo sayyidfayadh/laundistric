@@ -3714,9 +3714,7 @@ START: Header CSS
 .header .primary-header-inner .header-logo img {
   max-width: 170px;
 }
-.header .primary-header-inner .header-logo .logo-light {
-  display: none;
-}
+
 @media (max-width: 1399px) {
   .header .primary-header-inner .header-logo img {
     max-width: 150px;
@@ -4049,6 +4047,12 @@ START: Header CSS
 .header.fixed .action-menu .app-btn .fixed-icon {
   display: block;
 }
+.header.fixed .lang-item{
+  color: #000 !important;
+}
+.header.fixed .lang-item .pe-none{
+  color: blue !important;
+}
 
 .header-2 {
   top: 0;
@@ -4133,6 +4137,18 @@ START: Header CSS
 @media only screen and (max-width: 992px) {
   .header-3 .top-bar-inner .site-logo {
     display: none;
+  }
+  .header .primary-header-inner .header-logo .logo-light {
+    display: none !important;
+  }
+  .header .primary-header-inner .header-logo .logo-fixed {
+    display: block !important;
+  }
+  .side-menu-logo .logo-dark{
+    display: none !important;
+  }
+  .side-menu-logo .logo-fixed{
+    display: block !important;
   }
 }
 .header-3 .top-bar-inner .site-logo .logo-dark {
