@@ -419,7 +419,7 @@
                               Efficient, bulk-friendly laundry care designed for teams, uniforms, and operational garments—delivered on time, every time.
                             </p>
                           </div>
-                          <div class="col-lg-2 col-md-2 col-12 d-flex align-items-center justify-content-center">
+                          <div class="col-lg-2 col-md-2 col-12 p-3 d-flex align-items-center justify-content-end">
                             <a href="Business.html" class="button-fancy-gradient-3">View More</a>
                           </div>
                         </div>
@@ -861,16 +861,10 @@
                 
                     <!-- Right Column: Image -->
                     <div class="col-lg-5 col-12 d-flex">
-                      <div class="row">
-                       <div class="col-10 border">
-                        <img src="assets/img/m 1.png" alt="App Promo" class="img-fluid w-100" style="object-fit: contain; border-radius: 1rem;">
-                       </div>
-                       <div class="col-2 border">
-                        <img src="assets/img/qq 1.png" alt="App Promo" class="img-fluid w-100" style="object-fit: contain; border-radius: 1rem;">
-                       </div>
+                        <img src="assets/img/skip-hassle.png" alt="App Promo" class="img-fluid " style="object-fit: contain; border-radius: 1rem 0 0 1rem;">
                       </div>
-                    </div>
-                    <div class="d-flex flex-column mt-3 flex-md-row justify-content-center gap-4 text-center text-white">
+                      
+                    <div class="d-flex flex-column mt-2 flex-md-row justify-content-center gap-4 text-center text-white">
                         <div class="col-12 col-md-3">
                           <h3 class="fw-bold text-light fs-2 fs-md-3 fs-lg-1">40,000+</h3>
                           <p class="mb-0 text-light fs-6 fs-md-6 fs-lg-5">People use<br>Laundristic Services</p>
@@ -1915,19 +1909,21 @@
                         <div class="row g-1">
                           <div class="col-12">
                             <div class="d-flex gap-4 mb-3">
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="options" id="option1" value="business" />
-                                <label class="form-check-label" for="option1">Business</label>
-                              </div>
+                            
               
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="options" id="option2" value="family" />
+                                <input class="form-check-input" type="radio" checked  name="purpose" id="option2" value="family" />
                                 <label class="form-check-label" for="option2">Family</label>
                               </div>
               
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="options" id="option3" value="individual" />
+                                <input class="form-check-input" type="radio" name="purpose" id="option3" value="individual" />
                                 <label class="form-check-label" for="option3">Individual</label>
+                              </div>
+                              
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="purpose" id="option1" value="business" />
+                                <label class="form-check-label" for="option1">Business</label>
                               </div>
                             </div>
               
@@ -1976,7 +1972,7 @@
               
                             <!-- Address Field (Family & Individual only) -->
                             <div class="form-floating mb-3" id="addressField">
-                              <input type="text" class="form-control" id="addressInput" name="Address" placeholder="Address" required />
+                              <input type="text" class="form-control" id="addressInput" name="address" placeholder="Address" required />
                               <label for="addressInput">Address</label>
                               <div class="invalid-feedback text-start">Please enter your Address</div>
                             </div>
@@ -1989,7 +1985,7 @@
                             </div>
               
                             <div class="form-floating mb-3">
-                              <input type="text" class="form-control" id="locationInput" name="Location" placeholder="Location/Place" required />
+                              <input type="text" class="form-control" id="locationInput" name="location" placeholder="Location/Place" required />
                               <label for="locationInput">Location / Place</label>
                               <div class="invalid-feedback text-start">Please enter your Location</div>
                             </div>
@@ -2012,9 +2008,11 @@
                                 Submit
                               </button>
                             </div>
+                            <p id="response-message" class=" text-start mt-2 fs-6"></p>
                           </div>
                         </div>
                       </form>
+                     
                     </div>
               
                     <div class="col-lg-6 col-12 position-relative">
@@ -2318,7 +2316,19 @@
 
     <script>
 
+ window.onload = function () {
+    const params = new URLSearchParams(window.location.search);
+    const success = params.get('success');
 
+    const messageEl = document.getElementById('response-message');
+
+    if (success === "1") {
+        messageEl.textContent = "Message sent successfully!";
+        messageEl.style.color = "green";
+    } else if (success === "0") {
+        messageEl.textContent = "Failed to send message. Please try again.";
+        messageEl.style.color = "red";
+    }}
         //Scroll to section navigation
         document.addEventListener("DOMContentLoaded", function () {
            // Function to handle smooth scrolling
@@ -2380,6 +2390,9 @@
                event.preventDefault()
                event.stopPropagation();
              }
+             else{
+                console.log(form,'#form')
+             }
              setTimeout(() => {
              $('.submit-btn').removeAttr('disabled');
                
@@ -2409,7 +2422,7 @@ window.addEventListener('resize', updateUpPosClass);
 window.addEventListener('DOMContentLoaded', updateUpPosClass);
      
 document.addEventListener("DOMContentLoaded", () => {
-    const radios = document.querySelectorAll('input[name="options"]');
+    const radios = document.querySelectorAll('input[name="purpose"]');
 
     const nameField = document.getElementById("nameField");
     const contactPersonField = document.getElementById("contactPersonField");
@@ -2417,7 +2430,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const businessTypeField = document.getElementById("businessTypeField");
 
     function toggleFields() {
-      const selected = document.querySelector('input[name="options"]:checked')?.value;
+      const selected = document.querySelector('input[name="purpose"]:checked')?.value;
 
       if (selected === "business") {
         nameField.style.display = "none";
