@@ -16490,7 +16490,7 @@ START: Footer CSS
 
 /* Small devices (phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .howitworks-section .banner-bg-wrap{
+  .HowItWorks-section .banner-bg-wrap{
     padding-top: 20px !important;
   }
   .feature-section .fture-image{
