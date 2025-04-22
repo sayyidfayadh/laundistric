@@ -1,8 +1,12 @@
 <?php
-
+$purpose = $_POST["purpose"] ?? '';
 $name = $_POST["name"];
+$contactPerson = $_POST["contactPerson"] ?? '';
 $phone = $_POST["phone"];
 $email = $_POST["email"];
+$businessType = $_POST["businessType"] ?? '';
+$address = $_POST["address"] ?? '';
+$location = $_POST["location"] ?? '';
 $message = $_POST["message"];
 $message_body = "";
 $success = -1;
@@ -26,7 +30,7 @@ try {
     $mail->Port = 587;
 
     $mail->Username = "webotixinternalstorage@gmail.com";
-    $mail->Password = "oxtvmslsnnkuuwoy";
+    $mail->Password = "zlbt puen gwox bqew";
 
     $mail->setFrom("webotixinternalstorage@gmail.com", "Webotix");
     $mail->addAddress("enjoyal@webotix.ae", "Webotix");
@@ -35,10 +39,22 @@ try {
     // Create a message body
     $mail->isHTML(true);
     $message_body .= "<h1>Thank you for contacting us!</h1>";
-    $message_body .= "<p>Name: $name</p>";
-    $message_body .= "<p>Phone: $phone</p>";
-    $message_body .= "<p>Email: $email</p>";
-    $message_body .= "<p>Message: $message</p>";
+    $message_body .= "<p>Purpose: $purpose</p>";
+    if ($purpose === "business") {
+        $message_body .= "<p><strong>Contact Person Name:</strong> $contactPerson</p>";
+        $message_body .= "<p>Phone: $phone</p>";
+        $message_body .= "<p>Email: $email</p>";
+        $message_body .= "<p>Business Type: $businessType</p>";
+        $message_body .= "<p><strong>Location:</strong> $location</p>";
+        $message_body .= "<p>Message: $message</p>";
+    } else {
+        $message_body .= "<p>Name: $name</p>";
+        $message_body .= "<p>Phone: $phone</p>";
+        $message_body .= "<p>Email: $email</p>";
+        $message_body .= "<p>Address : $address</p>";
+        $message_body .= "<p>Location: $location</p>";
+        $message_body .= "<p>Message: $message</p>";
+    }
     $mail->Body = $message_body;
 
     $mail->send();
@@ -46,10 +62,12 @@ try {
     $success = 1;
     // echo "Message has been sent successfully";
 
-    header("Location: success.html");
+    // header("Location: success.html");
 } catch (Exception $e) {
     $success = 0;
     // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    header("Location: error.html");
+    // header("Location: error.html");
 }
 
+header("Location: index.html?success=$success#contact");
+exit();
