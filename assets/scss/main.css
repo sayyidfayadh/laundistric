@@ -2767,6 +2767,7 @@ section
   position: relative;
   padding-top: 25px;
   padding-bottom: 25px;
+
   z-index: 1;
   color: var(--rr-color-grey-3);
 }
@@ -3000,12 +3001,11 @@ section
 
 .step2 {
   position: relative;
-  padding: 4rem 0;
+  padding: 1.5rem 0;
 }
 @media (max-width: 575px) {
   .step2 {
     position: relative;
-    padding: 1rem 0;
   }
 }
 
@@ -14789,12 +14789,12 @@ START: Footer CSS
 
 @media only screen and (max-width: 992px) {
   .footer-widget {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 }
 @media only screen and (max-width: 767px) {
   .footer-widget {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 }
 .footer-widget .widget-header {
@@ -16457,10 +16457,58 @@ START: Footer CSS
   .box-link li {
     list-style: none;
   }
+  .feature-section .fture-image{
+    margin-top: 100px !important;
+  }
+  .counter-item .title .odometer-auto-theme{
+    font-size: 2.5rem !important;
+  }
+  .counter-item .plus{
+    font-size: 2.5rem !important;
+  }
+  .card-feture-sm .image-wrap {
+    justify-content: flex-start;
+  }
+  .step2 {
+    position: relative;
+  }
+  .choose-list{
+    flex-direction: column !important;
+  }
+  
+  .loginProcess-section .step2 .line-lg{
+    display: none !important;
+  } 
+  .contact-info{
+    display: flex !important;
+    flex-direction: column !important;
+  }
 }
 
 /* Small devices (phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .howitworks-section .banner-bg-wrap{
+    padding-top: 20px !important;
+  }
+  .feature-section .fture-image{
+    margin-top: 100px !important;
+  }
+  .counter-item .title .odometer-auto-theme{
+    font-size: 2.5rem !important;
+  }
+  .counter-item .plus{
+    font-size: 2.5rem !important;
+  }
+  .card-feture-sm .image-wrap {
+    justify-content: flex-start;
+  }
+  .loginProcess-section .step2 .line-lg{
+    display: none !important;
+  } 
+    .contact-info{
+    display: flex !important;
+    flex-direction: column !important;
+  }
  
 }
 
