@@ -86,7 +86,9 @@ body {
 border-radius: 10px;
 
 }
-
+.counter-section-home .counter-item .title,.counter-section-home .counter-item p {
+  color: white !important;
+}
 .theme-dark {
   color: var(--rr-color-grey-3);
 }

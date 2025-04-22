@@ -8,6 +8,7 @@ $businessType = $_POST["businessType"] ?? '';
 $address = $_POST["address"] ?? '';
 $location = $_POST["location"] ?? '';
 $message = $_POST["message"];
+$currentURL = $_SERVER["HTTP_REFERER"] ?? '';
 $message_body = "";
 $success = -1;
 
@@ -41,6 +42,7 @@ try {
     $message_body .= "<h1>Thank you for contacting us!</h1>";
     $message_body .= "<p>Purpose: $purpose</p>";
     if ($purpose === "business") {
+        
         $message_body .= "<p><strong>Contact Person Name:</strong> $contactPerson</p>";
         $message_body .= "<p>Phone: $phone</p>";
         $message_body .= "<p>Email: $email</p>";
@@ -69,5 +71,5 @@ try {
     // header("Location: error.html");
 }
 
-header("Location: index.html?success=$success#contact");
+header("Location: $currentURL?success=$success#contact");
 exit();
