@@ -550,7 +550,7 @@
                     </div>
                 </div>
             </section> 
-            <section id="howItWorks" class="">
+            <section id="HowItWorks" class="">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-4">
@@ -2200,7 +2200,7 @@
                                 </div>
                                 <ul class="address-list">
                                     <li><a href="#faq">FAQ</a></li>
-                                    <li><a href="howitworks.html">How it works</a></li>
+                                    <li><a href="HowItWorks.html">How it works</a></li>
                         
                                 
 
