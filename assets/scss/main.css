@@ -61,6 +61,7 @@ START: Template Default CSS
 
 :root {
   --primary:#27425f;
+  --green:#4CAF50;
 }
 
 * {
@@ -3355,7 +3356,9 @@ section
 .text-primary {
   color: var(--primary) !important;
 }
-
+.text-green {
+  color: var(--green) !important;
+}
 /* custom accordion */
 .accordion-brand {
   --bs-accordion-bg: var(--ash-brand) !important;
