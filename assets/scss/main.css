@@ -3478,7 +3478,10 @@ section
 }
 
 .box-shadow-theme1:hover {
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 8px 100px 0px;
+}
+.categories .box-shadow-theme1:hover{
+  background-color: white;
 }
 
 .box-shadow-theme2 {
@@ -16585,4 +16588,9 @@ START: Footer CSS
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   /* Your styles here */
+}
+/* service card*/
+.explore-services{
+  /* background-color: var(--rr-color-grey-light); */
+  border-radius: 14px;
 }
