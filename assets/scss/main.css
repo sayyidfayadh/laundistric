@@ -20,6 +20,7 @@
 START: Template Default CSS
 ----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
 :root {
   --rr-ff-body: 'Plus Jakarta Sans', sans-serif;
   --rr-ff-heading: 'Plus Jakarta Sans', serif;
@@ -3027,6 +3028,7 @@ section
   margin: 0 auto;
   z-index: 2;
   top: 10.5rem;
+
 }
 .step2 .line-lg img {
   width: 100%;

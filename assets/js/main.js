@@ -90,9 +90,31 @@
     $(".preloader-close").on("click", function () {
         $("#preloader").delay(0).fadeOut(500);
     });
-
+    function removeUrlParam(param) {
+        const url = new URL(window.location);
+        url.searchParams.delete(param);
+        window.history.replaceState({}, '', url);
+      }
     $(document).ready(function () {
+        // succes message
+        const params = new URLSearchParams(window.location.search);
+        const success = params.get('success');
+    
+        const messageEl = document.getElementById('response-message');
+    
+        if (success === "1") {
+            messageEl.textContent = "Message sent successfully!";
+            messageEl.style.color = "green";
+            removeUrlParam('success');
+        } else if (success === "0") {
+            messageEl.textContent = "Failed to send message. Please try again.";
+            messageEl.ztyle.color = "red";
+            removeUrlParam('success');
+      }
+  
+        // end
 
+        
         if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
             $('body').addClass('firefox');
         }
