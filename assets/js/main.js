@@ -61,6 +61,8 @@
         Preloader activation
     ========================================*/
     $(window).on("load", function (event) {
+
+        
         
         $("#preloader").delay(1000).fadeOut(500);
         // Text Animation
@@ -96,6 +98,26 @@
         window.history.replaceState({}, '', url);
       }
     $(document).ready(function () {
+        /* Odometer */
+        
+        setInterval(() => {
+
+            $(".odometer").waypoint(
+                function () {
+                    var odo = $(".odometer");
+                    odo.each(function () {
+                        var countNumber = $(this).attr("data-count");
+                        $(this).html(countNumber);
+                    });
+                },
+                {
+                    offset: "80%",
+                    triggerOnce: false,
+                }
+            );
+
+        }, 1000);
+        
         // succes message
         const params = new URLSearchParams(window.location.search);
         const success = params.get('success');
@@ -220,20 +242,20 @@
             });
         });
 
-        /* Odometer */
-        $(".odometer").waypoint(
-            function () {
-                var odo = $(".odometer");
-                odo.each(function () {
-                    var countNumber = $(this).attr("data-count");
-                    $(this).html(countNumber);
-                });
-            },
-            {
-                offset: "80%",
-                triggerOnce: true,
-            }
-        );
+        // /* Odometer */
+        // $(".odometer").waypoint(
+        //     function () {
+        //         var odo = $(".odometer");
+        //         odo.each(function () {
+        //             var countNumber = $(this).attr("data-count");
+        //             $(this).html(countNumber);
+        //         });
+        //     },
+        //     {
+        //         offset: "80%",
+        //         triggerOnce: true,
+        //     }
+        // );
 
         // Wow JS Active
         new WOW().init();
@@ -963,5 +985,6 @@ fsLightboxInstances["first-lightbox"].props.onOpen = function () {
 fsLightboxInstances["second-lightbox"].props.onOpen = function () {
 	console.log("The second lightbox has opened.");
 }
+
     
 })(jQuery);
