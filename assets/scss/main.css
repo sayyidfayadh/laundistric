@@ -341,6 +341,16 @@ ul {
   left: -200px;
   z-index: -1;
 }
+
+.callOrWhatsapp a{
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.callOrWhatsapp a:hover{
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+}
 @media (max-width: 1399px) {
   .top-shape {
     top: -250px;
@@ -3016,7 +3026,7 @@ section
   position: absolute;
   margin: 0 auto;
   z-index: 2;
-  top: 15.9rem;
+  top: 10.5rem;
 }
 .step2 .line-lg img {
   width: 100%;
@@ -3701,7 +3711,7 @@ START: Header CSS
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0 70px;
+  padding: 0 60px;
   justify-content: space-between;
 }
 @media (max-width: 1170px) {
@@ -16427,7 +16437,7 @@ START: Footer CSS
   height: 30px !important;
 }
 .loginProcess-section .step2 .line-lg {
-  top: 8.9rem;
+  top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -2659,6 +2659,13 @@ START: Header CSS
   z-index: 99;
   transition: all 0.3s ease-in-out;
 }
+.header .primary-header-inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 60px;
+  justify-content: space-between;
+}
 @media only screen and (max-width: 992px) {
   .header {
     position: relative;
@@ -2667,11 +2674,11 @@ START: Header CSS
   }
 }
 .header .primary-header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 60px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0px 60px;
+      justify-content: space-between;
 }
 @media (max-width: 1170px) {
   .header .primary-header-inner {
