@@ -3036,15 +3036,31 @@ section
   .step2 {
     position: relative;
   }
+  .footer-widget .widget-header .widget-title {
+    color: var(--primary);
+    font-size: 19px !important;
+    font-weight: 700;
+    position: relative;
+}
+
 }
 
 .step2 .line-lg {
   position: absolute;
   margin: 0 auto;
   z-index: 2;
-  top: 10.5rem;
+  top: 11.2rem;
 
 }
+/* schedule arrow */
+@media (min-width: 1024px) {
+.arrow-schedule img{
+width: 180px !important;
+}}
+@media (max-width: 1023px) {
+  .arrow-schedule img{
+  display: none !important;
+  }}
 .step2 .line-lg img {
   width: 100%;
   margin: 0 auto;
@@ -8077,11 +8093,55 @@ START: Testi CSS
   -o-object-fit: cover;
      object-fit: cover;
 }
+.testi-content.quotes{
+  height: 252px;
+}
+@media (min-width: 576px) {
+.schedule-your{
+  margin-top: 100px;
+}
+}
+@media (max-width: 576px) {
+  .schedule-your{
+    margin-top: 20px;
+  }
+  }
+
+.testi-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.testi-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.testi-content p {
+  flex-grow: 1;
+  /* margin-bottom: 20px; */
+}
+@media (max-width: 575.98px) {
+  .custom-mt-sm-only {
+    margin-top: 3rem; /* Equivalent to Bootstrap's mt-5 */
+  }
+}
+.swiper-slide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.testi-content h3.author {
+  margin-top: auto;
+}
 .testi-item .testi-content {
-  padding: 20px;
+  padding: 15px;
   text-align: left;
   position: absolute !important;
-  bottom: -55%;
+  top: 76%;
   left: 20px;
   right: 20px;
   margin-bottom: 0 !important;
@@ -16478,7 +16538,7 @@ START: Footer CSS
   .section-title {
     font-size: 1.5rem;
     line-height: 1.4;
-    text-align: center!important;
+    /* text-align: center!important; */
   }
 
   .Title-left {
