@@ -343,7 +343,7 @@ ul {
   z-index: -1;
 }
 
-.callOrWhatsapp a{
+/* .callOrWhatsapp a{
   border: 1px solid #ffffff;
   color: #ffffff;
 }
@@ -351,7 +351,22 @@ ul {
   background: #ffffff;
   color: #000000;
   border: 1px solid #ffffff;
+} */
+.swiper-slide {
+  display: flex;
+  height: auto;
 }
+
+.swiper-wrapper {
+  align-items: stretch; /* makes all slides the same height */
+}
+
+.swiper-slide .card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
 @media (max-width: 1399px) {
   .top-shape {
     top: -250px;
@@ -3076,7 +3091,7 @@ width: 180px !important;
 }
 .widget-step .card-body {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-content: center;
   align-items: center;
   text-align: center;
@@ -16508,7 +16523,10 @@ START: Footer CSS
   width: 80%;
 }/*# sourceMappingURL=main.css.map */
 
-
+.how-it-works-steps,.how-it-works-login-steps{
+  margin-top: 20px ;
+  margin-bottom: 30px ;
+}
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575px) {
   .section-1-banner .Title-left{
@@ -16579,6 +16597,16 @@ START: Footer CSS
     display: flex !important;
     flex-direction: column !important;
   }
+  /* .widget-step{
+    height: auto !important;
+  }
+  .widget-step .card-body {
+    justify-content: space-between !important;
+  } */
+  .how-it-works-steps,.how-it-works-login-steps{
+    margin-bottom:0px !important;
+    }
+  
 }
 
 /* Small devices (phones, 576px and up) */
@@ -16604,6 +16632,17 @@ START: Footer CSS
     .contact-info{
     display: flex !important;
     flex-direction: column !important;
+  }
+/*   
+  .widget-step{
+    height: auto !important;
+  }
+  .widget-step .card-body {
+    justify-content: space-between !important;
+  } */
+  
+  .how-it-works-steps,.how-it-works-login-steps{
+  margin-bottom:0px !important;
   }
  
 }
@@ -16649,6 +16688,10 @@ START: Footer CSS
 
   .box-link li {
     list-style: none;
+  }
+  
+  .how-it-works-steps,.how-it-works-login-steps{
+  margin-bottom:0px !important;
   }
 }
 
