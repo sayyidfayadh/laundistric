@@ -2201,7 +2201,7 @@
                                     <h3 class="widget-title">Laundry</h3>
                                 </div>
                                 <ul class="address-list">
-                                    <li><a href="#faq">FAQ</a></li>
+                                   <li><a href="index.html#faq">FAQ</a></li>
                                     <li><a href="HowItWorks.html">How it works</a></li>
                         
                                 
