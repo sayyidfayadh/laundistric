@@ -3035,6 +3035,7 @@ section
 @media (max-width: 575px) {
   .step2 {
     position: relative;
+    padding: 0rem 0;
   }
   .footer-widget .widget-header .widget-title {
     color: var(--primary);
