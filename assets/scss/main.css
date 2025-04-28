@@ -3049,9 +3049,14 @@ section
   position: absolute;
   margin: 0 auto;
   z-index: 2;
-  top: 11.2rem;
+  top: 11rem;
+  left: px;
 
 }
+.widget-step{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 23px -14px !important;
+}
+
 /* schedule arrow */
 @media (min-width: 1024px) {
 .arrow-schedule img{
@@ -3067,7 +3072,7 @@ width: 180px !important;
 }
 
 .up-pos {
-  top: -6rem;
+  top: -100px;
   position: relative;
 }
 
@@ -4096,7 +4101,7 @@ START: Header CSS
 .header.fixed .lang-item{
   color: #000 !important;
 }
-.header.fixed .lang-item .pe-none{
+.header.fixed .lang-item .selected{
   color: blue !important;
 }
 
@@ -5003,8 +5008,8 @@ START: Header CSS
   width: auto;
 }
 .mean-bar .mean-nav.mean-nav > ul li:not(:last-of-type) {
-  margin-bottom: 24px;
-  padding-bottom: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
   border-bottom: 1px solid var(--rr-color-border-1);
 }
 .mean-bar .mean-nav.mean-nav > ul li a {
@@ -11242,7 +11247,14 @@ START: Sidebar CSS
   background-color: #999;
   color: #fff;
 }
-
+.sidebar-buttons {
+  width: 100%;
+  display: flex
+;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 #sidebar-overlay {
   display: block;
   height: 100%;
@@ -11274,10 +11286,10 @@ START: Sidebar CSS
     justify-content: center;
   }
   .side-menu-logo {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
   .side-menu-wrap {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
   .side-menu-header h3 {
     display: none;
@@ -16707,5 +16719,5 @@ START: Footer CSS
 /* service card*/
 .explore-services{
   /* background-color: var(--rr-color-grey-light); */
-  border-radius: 14px;
+  border-radius: 18px;
 }

@@ -35,8 +35,14 @@
                 <div class="header-right-wrap">
                     <div class="header-menu-wrap">
                         <div class="mobile-menu-items">
+                            <div class="sidebar-button border-bottom mb-3 d-block d-md-none">
+                                <div class="lang-item app-btn rr-primary-btn rounded-pill p-3  my-3 gap-1" style="font-size: 14px !important;">
+                                    <a class="pe-none text-warning" href="index.html">EN</a> 
+                                    |  <a class="" href="">AR</a>
+                                </div>
+                             </div>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li ><a href="index.html">Home</a></li>
                                 <li><a href="HowItWorks.html">How it Works</a></li>
                                 <li><a href="AboutUs.html">About Us</a></li>    
                                 <li><a href="Business.html">Business </a></li>   
@@ -49,22 +55,15 @@
                     <div class="header-right">
                         <div class="sidebar-icon action-menu">
                             <ul class=" d-lg-flex d-none">
-                                <li class="lang-item  text-white"><a class=" text-muted" href="/index.html">EN</a> 
-                                    | <a class="pe-none" href="ar/index.html">AR</a>
+                                <li class="lang-item  text-white"><a class="pe-none text-muted" href="index.html">EN</a> 
+                                    | <a href="index.html">AR</a>
                                 </li>
                                 <!-- |
                                 <li><a href="contact.html">AR</a></li> -->
                                 <li class="app-btn rr-primary-btn">
-                                    <a href="tel:+123456789"> <span>Call | Whatsapp</span></a>
-                                    <a href="tel:+123456789">
-                                        <img class="regular-icon" src="assets/img/ic_baseline-phone.png">
-                                        <!-- <img class="fixed-icon" src="assets/img/ico-primary-apple.svg">-->
-                                        </a>
-                                    <a href="tel:+123456789">
-                                        <img class="regular-icon"
-                                            src="assets/img/ri_whatsapp-fill.png">
-                                        <!-- <img class="fixed-icon" src="assets/img/ico-primary-android.svg">-->
-                                        </a> 
+                                    <a href="tel:+97125856644" style="color: white !important;"> <span>Call <i class="bi bi-telephone me-2"></i> </span>  |  </a> <a href="https://wa.me/+97125856644" target="_blank" class="ms-2 " style="color: white !important;"> Whatsapp  <i class="bi bi-whatsapp"></i></span></a>
+                                    
+                                      
                                 </li>
                             </ul>
                             <button class="sidebar-trigger open d-lg-none d-block">
@@ -1484,14 +1483,14 @@
                       </p>
               
                       <form class="contact-form needs-validation" action="send-email.php" method="POST" novalidate>
-                        <h5 class="text-start mb-3">Your Purpose, Your Plan - Select One To Continue</h5>
+                        <h5 class="text-start mb-4">Your Purpose, Your Plan - Select One To Continue</h5>
                         <br />
               
                         <div class="row g-1">
                           <div class="col-12">
-                            <div class="d-flex gap-4 mb-3">
+                            <div class="d-flex gap-4 mb-4">
                             
-              
+                                <input type="text" class="d-none" id="currentURL" name="currentURL">
                               <div class="form-check">
                                 <input class="form-check-input" type="radio" checked  name="purpose" id="option2" value="family" />
                                 <label class="form-check-label" for="option2">Family</label>
@@ -1555,7 +1554,7 @@
                             <div class="form-floating mb-3" id="addressField">
                               <input type="text" class="form-control" id="addressInput" name="address" placeholder="Address" required />
                               <label for="addressInput">Address</label>
-                              <div class="invalid-feedback text-start">Please enter your Address</div>
+                              <div class="invalid-feedback text-start">Please enter your address</div>
                             </div>
               
                             <!-- Business Type Field (Business only) -->
@@ -1568,7 +1567,7 @@
                             <div class="form-floating mb-3">
                               <input type="text" class="form-control" id="locationInput" name="location" placeholder="Location/Place" required />
                               <label for="locationInput">Location / Place</label>
-                              <div class="invalid-feedback text-start">Please enter your Location</div>
+                              <div class="invalid-feedback text-start">Please enter your location</div>
                             </div>
               
                             <div class="form-floating mb-3">

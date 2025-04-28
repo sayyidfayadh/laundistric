@@ -31,8 +31,14 @@
             <div class="header-right-wrap">
                 <div class="header-menu-wrap">
                     <div class="mobile-menu-items">
+                        <div class="sidebar-button border-bottom mb-3 d-block d-md-none">
+                            <div class="lang-item app-btn rr-primary-btn rounded-pill p-3  my-3 gap-1" style="font-size: 14px !important;">
+                                <a class="pe-none text-warning" href="index.html">EN</a> 
+                                |  <a class="pe-none" href="">AR</a>
+                            </div>
+                         </div>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li ><a href="index.html">Home</a></li>
                             <li><a href="HowItWorks.html">How it Works</a></li>
                             <li><a href="AboutUs.html">About Us</a></li>    
                             <li><a href="Business.html">Business </a></li>   
@@ -43,35 +49,36 @@
                 </div>
                 <!-- /.header-menu-wrap -->
                 <div class="header-right">
-                  <div class="sidebar-icon action-menu">
-                      <ul class=" d-lg-flex d-none">
-                          <li class="lang-item  text-white"><a class="pe-none text-muted" href="index.html">EN</a> 
-                              | <a href="index.html">AR</a>
-                          </li>
-                          <!-- |
-                          <li><a href="contact.html">AR</a></li> -->
-                          <li class="app-btn rr-primary-btn">
-                              <a href="tel:+97125856644" style="color: white !important;"> <span>Call <i class="bi bi-telephone me-2"></i> </span>  |  </a> <a href="https://wa.me/+97125856644" target="_blank" class="ms-2 " style="color: white !important;"> Whatsapp  <i class="bi bi-whatsapp"></i></span></a>
-                              
+                    <div class="sidebar-icon action-menu">
+                        <ul class=" d-lg-flex d-none">
+
+                            <li class="lang-item  text-white"><a class=" selected text-muted" href="index.html">EN</a> 
+                                | <a class="pe-none" href="index.html">AR</a>
+                            </li>
+                            <!-- |
+                            <li><a href="contact.html">AR</a></li> -->
+                            <li class="app-btn rr-primary-btn">
+                                <a href="tel:+97125856644" style="color: white !important;"> <span>Call <i class="bi bi-telephone me-2"></i> </span>  |  </a> <a href="https://wa.me/+97125856644" target="_blank" class="ms-2 " style="color: white !important;"> Whatsapp  <i class="bi bi-whatsapp"></i></span></a>
                                 
-                          </li>
-                      </ul>
-                      <button class="sidebar-trigger open d-lg-none d-block">
-                          <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0.300781 0H5.30078V5H0.300781V0Z" fill="currentColor" />
-                              <path d="M0.300781 9H5.30078V14H0.300781V9Z" fill="currentColor" />
-                              <path d="M0.300781 18H5.30078V23H0.300781V18Z" fill="currentColor" />
-                              <path d="M9.30078 0H14.3008V5H9.30078V0Z" fill="currentColor" />
-                              <path d="M9.30078 9H14.3008V14H9.30078V9Z" fill="currentColor" />
-                              <path d="M9.30078 18H14.3008V23H9.30078V18Z" fill="currentColor" />
-                              <path d="M18.3008 0H23.3008V5H18.3008V0Z" fill="currentColor" />
-                              <path d="M18.3008 9H23.3008V14H18.3008V9Z" fill="currentColor" />
-                              <path d="M18.3008 18H23.3008V23H18.3008V18Z" fill="currentColor" />
-                          </svg>
-                      </button>
-                  </div>
-              </div>
+                                  
+                            </li>
+                        </ul>
+                        <button class="sidebar-trigger open d-lg-none d-block">
+                            <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.300781 0H5.30078V5H0.300781V0Z" fill="currentColor" />
+                                <path d="M0.300781 9H5.30078V14H0.300781V9Z" fill="currentColor" />
+                                <path d="M0.300781 18H5.30078V23H0.300781V18Z" fill="currentColor" />
+                                <path d="M9.30078 0H14.3008V5H9.30078V0Z" fill="currentColor" />
+                                <path d="M9.30078 9H14.3008V14H9.30078V9Z" fill="currentColor" />
+                                <path d="M9.30078 18H14.3008V23H9.30078V18Z" fill="currentColor" />
+                                <path d="M18.3008 0H23.3008V5H18.3008V0Z" fill="currentColor" />
+                                <path d="M18.3008 9H23.3008V14H18.3008V9Z" fill="currentColor" />
+                                <path d="M18.3008 18H23.3008V23H18.3008V18Z" fill="currentColor" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
                 <!-- /.header-right -->
             </div>
         </div>
@@ -79,7 +86,7 @@
     </div>
 </header>
 
-<div id="sidebar-area" class="sidebar-area">
+<div id="sidebar-area" class="sidebar-area" style="overflow: scroll !important;">
     <button class="sidebar-trigger close">
         <svg class="sidebar-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="16px" height="12.7px" viewBox="0 0 16 12.7"
@@ -99,7 +106,7 @@
             <img class="logo-fixed" src="assets/img/fixed-logo.svg" alt="Logo"></a>
         </div>
         <div class="side-menu-wrap"></div>
-        <div class="side-menu-about">
+        <!-- <div class="side-menu-about">
             <div class="side-menu-header">
                 <h3>About Us</h3>
             </div>
@@ -107,14 +114,21 @@
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud nisi ut aliquip ex ea commodo
                 consequat.</p>
             <a href="contact.html" class="rr-primary-btn">Contact Us</a>
-        </div>
-        <div class="side-menu-contact">
-            <div class="side-menu-header">
-                <h3>Contact Us</h3>
+        </div> -->
+        <div class="sidebar-buttons border-top pt-3">
+           
+            <!-- |
+            <li><a href="contact.html">AR</a></li> -->
+            <div class="app-btn rr-primary-btn rounded-3">
+                <a href="tel:+97125856644" style="color: white !important;"> <span>Call <i class="bi bi-telephone me-2"></i> </span>  |  </a> <a href="https://wa.me/+97125856644" target="_blank" class="ms-2 " style="color: white !important;"> Whatsapp  <i class="bi bi-whatsapp"></i></span></a>
+                
+                  
             </div>
-        </div>
     </div>
+    </div>
+    
 </div>
+<!--/.sidebar-area-->
     <!--/.sidebar-area-->
 
     <div id="smooth-wrapper">
@@ -369,12 +383,12 @@
                   </p>
           
                   <form class="contact-form needs-validation" action="send-email.php" method="POST" novalidate>
-                    <h5 class="text-start mb-3">Your Purpose, Your Plan - Select One To Continue</h5>
+                    <h5 class="text-start mb-4">Your Purpose, Your Plan - Select One To Continue</h5>
                     <br />
           
                     <div class="row g-1">
                       <div class="col-12">
-                        <div class="d-flex gap-4 mb-3">
+                        <div class="d-flex gap-4 mb-4">
                         
                             <input type="text" class="d-none" id="currentURL" name="currentURL">
                           <div class="form-check">
