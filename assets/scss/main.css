@@ -3250,6 +3250,32 @@ width: 180px !important;
 .sorting {
   background-color: #EBF2FF;
 }
+@media (min-width: 1024px) {
+.col-details{
+  padding-left: 150px !important;
+}
+}
+.col-details{
+  padding: 30px;
+}
+
+.responsive-bg {
+  height: 666px !important;
+  background-image: url('../img/driver-app-frame.jpg');
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+
+}
+
+/* Apply 'contain' for small screens */
+@media (max-width: 767.98px) {
+  .responsive-bg {
+    height: 350px!important;
+    background-size: cover;
+  }
+}
+
 
 .card-download-wedget {
   border: 0;
