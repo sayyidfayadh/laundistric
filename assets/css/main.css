@@ -3916,6 +3916,7 @@ START: Header CSS
   padding: 0;
   float: none;
 }
+
 @media only screen and (max-width: 767px) {
   .mean-bar .mean-nav.mean-nav > ul li a {
     font-size: 14px;
