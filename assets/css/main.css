@@ -3903,8 +3903,8 @@ START: Header CSS
   width: auto;
 }
 .mean-bar .mean-nav.mean-nav > ul li:not(:last-of-type) {
-  margin-bottom: 24px;
-  padding-bottom: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
   border-bottom: 1px solid var(--rr-color-border-1);
 }
 .mean-bar .mean-nav.mean-nav > ul li a {
@@ -9976,10 +9976,10 @@ START: Sidebar CSS
     justify-content: center;
   }
   .side-menu-logo {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
   .side-menu-wrap {
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
   }
   .side-menu-header h3 {
     display: none;
