@@ -3152,7 +3152,8 @@ border-right: 0.5px solid #dee2e6 ;
 }
 @media (min-width: 1024px) {
   .header .primary-header-inner .header-menu-wrap ul li a{
-  padding: 5px 18px!important;
+  padding: 5px 25px!important;
+  font-size: 16px !important;
   }
 }
 
