@@ -1,5 +1,82 @@
 
 (function ($) {
+     //Form validation 
+     // Example starter JavaScript for disabling form submissions if there are invalid fields
+     (function () {
+        'use strict';
+      
+        var forms = document.querySelectorAll('.needs-validation');
+      
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          const phoneInput = $(form).find("input[type='tel']");
+      
+          // Set default +971 and restrict editing of the prefix
+          phoneInput.each(function () {
+            const input = this;
+      
+            // Set default value
+            if (!input.value.startsWith("+971")) {
+              input.value = "+971";
+            }
+      
+            // Prevent deleting the prefix
+            input.addEventListener("keydown", function (e) {
+              if (this.selectionStart <= 4 && ['Backspace', 'Delete'].includes(e.key)) {
+                e.preventDefault();
+              }
+            });
+      
+            // Format input on each change
+            $(input).on("input", function () {
+                let digits = this.value.replace(/[^\d]/g, "");
+              
+                // Ensure it starts with 971
+                if (!digits.startsWith("971")) {
+                  digits = "971";
+                }
+              
+                let after971 = digits.slice(3); // get everything after 971
+              
+                // Limit total length (12 for mobile, 11 for landline)
+                if (after971.startsWith("5")) {
+                  after971 = after971.slice(0, 9); // 9 digits for mobile
+                } else {
+                  after971 = after971.slice(0, 8); // 8 digits max for landline
+                }
+              
+                this.value = "+971" + after971;
+              
+                // Restore +971 if deleted
+                if (this.value.length < 4) {
+                  this.value = "+971";
+                }
+              });
+            // Maintain cursor position after prefix
+            input.addEventListener("focus", function () {
+              setTimeout(() => {
+                if (this.selectionStart < 4) {
+                  this.setSelectionRange(this.value.length, this.value.length);
+                }
+              }, 0);
+            });
+          });
+      
+          // Submit validation
+          form.addEventListener('submit', function (event) {
+            $('.submit-btn').attr('disabled', 'true');
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+      
+            setTimeout(() => {
+              $('.submit-btn').removeAttr('disabled');
+            }, 1000);
+      
+            form.classList.add('was-validated');
+          }, false);
+        });
+      })();
     "use strict";
 
     // Get Device width

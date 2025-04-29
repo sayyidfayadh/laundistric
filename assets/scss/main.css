@@ -3032,19 +3032,84 @@ section
   position: relative;
   padding: 1.5rem 0;
 }
-
+.choose-us-content .choose-list li {
+  margin-bottom: 0px !important;
+}
+.choose-us-content .choose-list p {
+  font-size: 14px;
+  color: var(--rr-color-grey-3);
+  line-height: 24px;
+} 
 @media only screen and (min-width: 992px) {
   .goodbye-img{
-    width: 75% !important;
+    width: 65% !important;
     position: absolute;
     left: 0;
+    top: 0;
   }
+  /* contacr card */
+  .contact-info .card{
+    background-color: white;
+    backdrop-filter: blur(9px) saturate(300%);
+    -webkit-backdrop-filter: blur(22px) saturate(200%);
+  }
+  .contact-info .card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .contact-info .card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .contact-info .card-body {
+    padding: 20px;
+  }
+  
+  .contact-info img {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .contact-info h5 {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .contact-info a {
+    color: #007bff;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline !important;
+  }
+  
+  .marriot{
+border-right: 0.5px solid #dee2e6 ;
+}
  
 }
+.footer-widget .social-list li a:hover {
+  background-color: white !important;
+  color: black !important;
+}
+.footer-widget .social-list li a {
 
+  height: 35px !important;
+  width: 35px !important;
+}
 .goodbye-img{
   width: 100%;
 }
+
 @media (max-width: 575px) {
   .step2 {
     position: relative;
@@ -3058,6 +3123,39 @@ section
 }
 
 }
+/* navbar */
+.header .primary-header-inner {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+.header .primary-header-inner .header-menu-wrap ul li a{
+  /* font-weight: 500 !important; */
+    /* padding: 0.5rem 0.8rem !important; */
+    padding: 5px 10px!important;
+    text-align: start;
+    font-size: 12px !important;
+    border-radius: 10px ;
+    transition: all 0.3s ease;
+    line-height: normal;
+}
+.header .primary-header-inner .header-menu-wrap ul li a:hover{
+  color: blue !important;
+  background: white !important;
+  /* border-radius: 10px; */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.header .primary-header-inner .header-menu-wrap ul li a.active{
+  color: blue !important;
+  background: white !important;
+  /* border-radius: 10px; */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 1024px) {
+  .header .primary-header-inner .header-menu-wrap ul li a{
+  padding: 5px 18px!important;
+  }
+}
+
 
 .step2 .line-lg {
   position: absolute;
@@ -3833,16 +3931,22 @@ START: Header CSS
 .header .primary-header-inner .header-menu-wrap ul li {
   display: inline-block;
   position: relative;
-  margin: 0 25px;
+  margin: 0 0px;
 }
 @media (max-width: 1399px) {
   .header .primary-header-inner .header-menu-wrap ul li {
-    margin: 0 15px;
+    /* margin: 0 15px; */
+  }
+}
+@media (max-width: 1025px) {
+  .icon-contact-header{
+    
+display: none;
   }
 }
 @media (max-width: 1170px) {
   .header .primary-header-inner .header-menu-wrap ul li {
-    margin: 0 10px;
+    /* margin: 0 10px; */
   }
 }
 .header .primary-header-inner .header-menu-wrap ul li:first-child {

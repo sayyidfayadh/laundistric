@@ -2259,7 +2259,7 @@
                             </div>
                             <div class="col-lg-4 d-flex align-items-center justify-content-center">
                                 <div class="d-flex align-items-center">     
-                                    <a href="https://webotix.ae/"><p class="fw-500">Designed and Developed by </p></a>
+                                    <a href="https://webotix.ae/" target="_blank"><p class="fw-500">Designed and Developed by </p></a>
                                     <img src="assets/img/logos/webotixLogo.png" alt="Developed by Webotix" class="w-auto h-auto">
                                 </div>
                             </div>
