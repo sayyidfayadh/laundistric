@@ -3156,7 +3156,16 @@ border-right: 0.5px solid #dee2e6 ;
   font-size: 14px !important;
   }
 }
-
+@media (max-width: 1023.98px) {
+.explore-services.collar-img{
+  width: 700px !important;
+}
+}
+@media (min-width: 1024px) {
+  .explore-services.collar-img{
+    width: 305px !important;
+  }
+  }
 
 .step2 .line-lg {
   position: absolute;
@@ -3164,6 +3173,18 @@ border-right: 0.5px solid #dee2e6 ;
   z-index: 2;
   top: 11rem;
   left: px;
+
+}
+.step2 .line-lg-2 img {
+  width: 77%;
+  margin: 0 auto;
+}
+.step2 .line-lg-2 {
+  position: absolute;
+  margin: 0 auto;
+  z-index: 2;
+  top: 11rem;
+  left: 140px;
 
 }
 .widget-step{
