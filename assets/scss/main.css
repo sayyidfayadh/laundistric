@@ -87,6 +87,9 @@ body {
 border-radius: 10px;
 
 }
+.express-delivery-container a:hover{
+color: black !important;
+}
 .counter-section-home .counter-item .title,.counter-section-home .counter-item p {
   color: white !important;
 }
@@ -3152,7 +3155,7 @@ border-right: 0.5px solid #dee2e6 ;
 }
 @media (min-width: 1280px) {
   .header .primary-header-inner .header-menu-wrap ul li a{
-  padding: 5px 28px!important;
+  /* padding: 5px 28px!important; */
   font-size: 14px !important;
   }
 }
@@ -3186,6 +3189,13 @@ border-right: 0.5px solid #dee2e6 ;
   top: 11rem;
   left: 140px;
 
+}
+.sidebar-icon a:hover {
+  color: black !important;
+
+}
+.header.fixed .action-menu .app-btn a {
+  color: #fff !important;
 }
 .widget-step{
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 23px -14px !important;
@@ -3910,7 +3920,7 @@ START: Header CSS
   align-items: center;
   flex-wrap: wrap;
   padding: 0 60px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media (max-width: 1170px) {
   .header .primary-header-inner {
@@ -3960,7 +3970,7 @@ START: Header CSS
     /* margin: 0 15px; */
   }
 }
-@media (max-width: 1025px) {
+@media (max-width: 1200px) {
   .icon-contact-header{
     
 display: none;
@@ -4151,14 +4161,14 @@ display: none;
 }
 @media (max-width: 1399px) {
   .header .primary-header-inner .header-right-wrap {
-    -moz-column-gap: 50px;
-         column-gap: 50px;
+    /* -moz-column-gap: 50px; */
+         /* column-gap: 50px; */
   }
 }
 @media (max-width: 1170px) {
   .header .primary-header-inner .header-right-wrap {
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    /* -moz-column-gap: 20px; */
+         /* column-gap: 20px; */
   }
 }
 .header .primary-header-inner .header-right-wrap .header-right {
