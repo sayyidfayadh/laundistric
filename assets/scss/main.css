@@ -3197,6 +3197,9 @@ border-right: 0.5px solid #dee2e6 ;
 .header.fixed .action-menu .app-btn a {
   color: #fff !important;
 }
+.header.fixed .action-menu .app-btn a:hover,.header.fixed .action-menu .app-btn .icon-contact-header:hover {
+  color: black !important;
+}
 .widget-step{
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 23px -14px !important;
 }
