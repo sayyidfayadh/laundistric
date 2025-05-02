@@ -179,13 +179,42 @@ a:hover {
 }
 
 a:hover {
-  color: var(--rr-color-theme-primary);
+  color: black;
 }
-
+.btn-outline-light:hover{
+  color: cornflowerblue !important;
+}
+.btn-outline-light  a:hover{
+  color: black !important;
+}
+.position-arrangement.btn-outline-light{
+  color: white !important;
+}
+.position-arrangement a:hover{
+color: black !important;
+}
 .slick-list.draggable {
   cursor: grab;
 }
-
+/* easy login process */
+.col-easy{
+  width: 14%;
+}
+@media (max-width: 1399px) {
+.col-easy{
+  width: 25%;
+}
+}
+@media (max-width: 1024px) {
+  .col-easy{
+    width: 25%;
+  }
+  }
+  @media (max-width: 576px) {
+    .col-easy{
+      width: 50%;
+    }
+    }
 a,
 button {
   color: inherit;
@@ -3394,7 +3423,7 @@ width: 180px !important;
 
 .responsive-bg {
   height: 666px !important;
-  background-image: url('../img/driver-app-frame.jpg');
+  background-image: url('../img/driver-app-frame.png');
   background-repeat: no-repeat;
   /* background-position: center; */
   background-size: cover;
