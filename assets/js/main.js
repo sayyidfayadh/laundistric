@@ -234,11 +234,28 @@
                 });
             }
         }
+       
 
         var minWidth = window.matchMedia("(min-width: 992px)");
         if (header.hasClass("sticky-active")) {
             menuSticky(minWidth);
         }
+        var maxWidth = window.matchMedia("(max-width: 768px)");
+        function menuStickyMax(w) {
+            if (w.matches) {
+                // Directly add class since no scroll behavior is needed
+                header.addClass("fixed");
+            } else {
+                header.removeClass("fixed");
+            }
+        }
+        if (header.hasClass("sticky-active")) {
+            menuStickyMax(maxWidth);
+        
+            // Watch for viewport changes
+            maxWidth.addListener(menuStickyMax);
+        }
+        
 
         //Mobile Menu Js
         $(".mobile-menu-items").meanmenu({
