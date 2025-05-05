@@ -3946,6 +3946,12 @@ START: Header CSS
     top: 0;
     height: auto !important;
   }
+  #smooth-content{
+      padding-top: 20px;
+}
+.home-banner{
+  padding-top: 120px !important;
+}
 }
 .header .primary-header-inner {
   display: flex;
@@ -16750,7 +16756,7 @@ START: Footer CSS
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575px) {
   .section-1-banner .Title-left{
-    /* padding-top: 0px !important; */
+    padding-top: 0px !important;
   }
   .section-1-banner{
     padding: 0px !important;
@@ -16870,7 +16876,7 @@ START: Footer CSS
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .section-1-banner .Title-left{
-    /* padding-top: 0px !important; */
+    padding-top: 0px !important;
   }
   .section-1-banner{
     padding: 0px !important;
