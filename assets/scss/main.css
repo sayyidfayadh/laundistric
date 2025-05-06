@@ -2803,7 +2803,7 @@ banner home
   list-style: none;
 }
 .app-widget .box-link img {
-  width: 150px;
+  width: 130px !important;
 }
 
 .banner-bg-wrap .banner-bg {
@@ -3147,9 +3147,16 @@ border-right: 0.5px solid #dee2e6 ;
     position: relative;
     padding: 0rem 0;
   }
+  .footer-widget p{
+    font-size: 12px !important;
+    line-height: 15px !important;
+  }
+  .footer-widget .widget-header{
+    margin-bottom: 20px !important;
+  }
   .footer-widget .widget-header .widget-title {
     color: var(--primary);
-    font-size: 19px !important;
+    font-size: 15px !important;
     font-weight: 700;
     position: relative;
 }
@@ -15142,7 +15149,7 @@ START: Footer CSS
 }
 .footer-widget .widget-header .widget-title {
   color: var(--primary);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   position: relative;
 }
@@ -15193,7 +15200,7 @@ START: Footer CSS
   border-bottom: 1px solid var(--rr-color-theme-primary);
 }
 .footer-widget .footer-list li:not(:last-of-type) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .footer-widget .footer-form {
   position: relative;
@@ -16753,8 +16760,25 @@ START: Footer CSS
   margin-top: 20px ;
   margin-bottom: 30px ;
 }
+
+/* download now */
+.download-now {
+  background-color: rgba(255, 255, 255, 0.77);
+  font-weight:bolder;
+  border-radius: 15px;
+ /* color: var(--rr-color-heading-primary); */
+  background-position: center;
+  background-attachment: fixed;
+}
+
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575px) {
+  .footer-widget .widget-header .widget-title {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+  }
   .section-1-banner .Title-left{
     padding-top: 0px !important;
   }
@@ -16789,9 +16813,15 @@ START: Footer CSS
 
   .box-link ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-bottom: 0px !important;
     gap: 10px;
     padding: 0;
+    text-align: start;
+  }
+  .app-widget .box-link img{
+    width: 130px !important;
   }
 
   .box-link li {
@@ -16907,7 +16937,7 @@ START: Footer CSS
 
   .box-link ul {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 10px;
     padding: 0;
   }
